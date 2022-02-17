@@ -1,7 +1,4 @@
 'use strict';
-// let l= document.querySelector('.message');
-// console.log(l);
-// document.querySelector('.message').textContent="it's working properly";
 
 let score=20;
 let highscore=0;
