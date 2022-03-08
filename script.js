@@ -41,6 +41,7 @@ document.querySelector('.check').addEventListener('click', function(){
    
     }
    else if(val===secretNumber){
+     start();
     document.querySelector('.message').textContent='🎉 Correct Number 🎊';
     document.querySelector('.number').textContent=secretNumber;
     document.querySelector('body').style.backgroundColor='rgb(6, 146, 25)';
