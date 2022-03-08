@@ -1,11 +1,5 @@
 'use strict';
-  // for starting the confetti 
 
-        const start = () => {
-            setTimeout(function() {
-                confetti.start()
-            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-        };
 let score=20;
 let highscore=0;
 let secretNumber = Math.round(Math.random()*19)+1;
@@ -41,7 +35,7 @@ document.querySelector('.check').addEventListener('click', function(){
    
     }
    else if(val===secretNumber){
-     start();
+     confetti.start();
     document.querySelector('.message').textContent='🎉 Correct Number 🎊';
     document.querySelector('.number').textContent=secretNumber;
     document.querySelector('body').style.backgroundColor='rgb(6, 146, 25)';
